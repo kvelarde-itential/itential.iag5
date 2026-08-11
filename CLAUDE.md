@@ -79,7 +79,7 @@ Deploys server **or** runner depending on `gateway_application_mode`. Task execu
 3. `install_python.yml` — optional Python 3.12 install (controlled by `gateway_server_features_python_enabled`)
 4. `install_tofu.yml` — optional OpenTofu install (controlled by `gateway_server_features_opentofu_enabled`)
 5. `upload_certs.yml` — uploads TLS cert/key and CA cert
-6. `configure_gateway.yml` — renders `server.conf.j2` or `runner.conf.j2` to `/etc/gateway/gateway.conf`; also renders `iagctl.service.j2` to `/usr/lib/systemd/system/iagctl.service` and `iagctl.env.j2` to `/etc/gateway/iagctl.env` (mode 0600) when `gateway_server_store_backend == 'dynamodb'` or proxy is enabled
+6. `configure_gateway.yml` — renders `server.conf.j2` or `runner.conf.j2` to `/etc/gateway/gateway.conf`; also renders `iagctl.service.j2` to `/usr/lib/systemd/system/iagctl.service`, `iagctl.env.j2` to `/etc/gateway/iagctl.env` (mode 0600) when `gateway_server_store_backend == 'dynamodb'` or proxy is enabled, and `iagctl.logrotate.j2` to `/etc/logrotate.d/iagctl`
 7. `configure_firewalld.yml` — opens ports in firewalld (optional)
 8. `certify.yml` — live TLS handshake tests post-deployment
 
