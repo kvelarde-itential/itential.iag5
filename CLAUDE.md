@@ -41,7 +41,7 @@ itential.iag5/
 │   ├── reference_guide.md              # Full variable reference (100+ vars)
 │   ├── certify.md                  # Post-deployment TLS verification guide
 │   └── verify.md           # Pre-flight environment verification guide
-├── example_inventories/           # Five reference inventory files
+├── example_inventories/           # Six reference inventory files
 ├── playbooks/
 │   ├── site.yml                   # Meta playbook — imports all others in order
 │   ├── servers.yml
